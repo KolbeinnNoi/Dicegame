@@ -65,7 +65,7 @@ footer {
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(80deg);
+    transform: rotate(0deg);
   }
 }
 div .dice img {
