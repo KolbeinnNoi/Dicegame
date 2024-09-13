@@ -60,6 +60,19 @@ footer {
   }
 }
 
-img {
+@keyframes unspin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(80deg);
+  }
+}
+div .dice img {
+  animation: unspin 0.5s ease-in-out;
+  animation-direction: alternate;
+}
+div .spin img {
   animation: spin 0.5s ease-in-out;
+  animation-direction: alternate;
 }

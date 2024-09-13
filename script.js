@@ -6,11 +6,11 @@ function randomNumber(){
 
     let result = document.querySelector("h1");
     
-    document.querySelector(".dice").classList.add("spin");
+    document.querySelectorAll(".dice").forEach(function (dice) {
+        dice.classList.toggle("spin");
+    });
 
     setTimeout(function () {
-    
-    document.querySelector(".dice").classList.remove("spin");
 
     document.querySelector(".img1").setAttribute("src", "./images/dice"+ dice1 +".png");
     document.querySelector(".img2").setAttribute("src", "./images/dice"+ dice2 +".png");
